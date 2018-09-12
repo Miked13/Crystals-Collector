@@ -1,0 +1,22 @@
+body{
+    background-image: url("../images/hotballons.jpg");
+    background-size: cover;
+    background-attachment: fixed;
+    height: 100%;
+}
+.col-5{
+    background-color: lightgreen;
+    opacity: 2;
+}
+.col-8{
+    background-color: lightcoral;
+}
+.score{
+    background: green;
+}
+.tscore{
+    background: lightblue;
+}
+h4{
+    font-size: 20px;
+}
