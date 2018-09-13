@@ -8,11 +8,15 @@ $(document).ready(function () {
     var wins = 0;
     var losses = 0;
     var totalScore = 0;
+    var click = document.getElementById("click");
+    var gameOver = document.getElementById("gameOver");
+    var gameWon = document.getElementById("gameWon");
 //connecting the divs in HTML to their values in JS
     $("#numberDisplayed").text(currentNumber);
     $("#Wins").text(wins);
     $("#Losses").text(losses);
     $("#totalScore").text(totalScore);
+    
 //Function to reset the game
     function resetGame() {
         currentNumber = Math.floor(Math.random() * 50 + 1);
@@ -32,6 +36,7 @@ $(document).ready(function () {
         wins++;
         $("#Wins").text(wins);
         $("#result").text("You won!!");
+        gameWon.play();
         resetGame();
         }
     }
@@ -41,6 +46,7 @@ $(document).ready(function () {
             losses++;
             $("#Losses").text(losses);
             $("#result").text("You lost!!");
+            gameOver.play();
             resetGame();
         }
     }
@@ -50,23 +56,27 @@ $(document).ready(function () {
         $("#totalScore").text(totalScore);
         checkWins();
         checkLosses();
+        click.play();
     });
     $("#purple-crystal").on("click", function () {
         totalScore += crystal2;
         $("#totalScore").text(totalScore);
         checkWins();
         checkLosses();
+        click.play();
     });
     $("#white-crystal").on("click", function () {
         totalScore += crystal3;
         $("#totalScore").text(totalScore);
         checkWins();
         checkLosses();
+        click.play();
     });
     $("#yellow-crystal").on("click", function () {
         totalScore += crystal4;
         $("#totalScore").text(totalScore);
         checkWins();
         checkLosses();
+        click.play();
     });
 });

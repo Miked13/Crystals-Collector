@@ -4,9 +4,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
-    <script src= https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js></script>
-    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+        crossorigin="anonymous">
+    <script src=https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js> </script> <link rel="stylesheet"
+        href="assets/css/style.css">
     <title>Crystal Collector!</title>
 </head>
 
@@ -14,12 +15,12 @@
     <div class="container">
         <div class="row">
             <div class="col-5">
-                <h2>Crystals Collector!</h2>
+                <h1>Crystals Collector!</h1>
             </div>
         </div>
 
         <div class="row">
-            <div class="col-8">
+            <div class="col-8 lead">
                 <p>You will be given a randaom number at the start of the game.</p>
 
                 <p>There are four crystals below. By clicking on a crystal
@@ -39,10 +40,19 @@
             <div class="col-2"> </h4>
                 <h4> <span id="result"></span> 
                 <h4>Wins: <span id="Wins"></span> </h4>
+                <audio controls id = "gameWon">
+                    <source src = "assets/audio/gameWon.mp3" type = "audio/mp3">
+                </audio>
                 <h4>Loses: <span id="Losses"></span> </h4>
+                <audio controls id = "gameOver">
+                    <source src = "assets/audio/gameOver.wav" type = "audio/wav">
+                </audio>
             </div>
         </div>
         <div class="row">
+            <audio controls id = "click">
+                <source src = "assets/audio/Click.ogg" type = "audio/ogg">
+            </audio>
             <div class="col-2">
                 <img src="assets/images/tallcrystal.png" id="tall-crystal" width="200" height="200" class="img-thumbnail">
             </div>
@@ -68,5 +78,6 @@
         </div>
     </div>
     <script src = "assets/javascript/game.js"></script>
-</body>
+    </body>
+
 </html>

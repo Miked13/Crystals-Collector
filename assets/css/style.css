@@ -3,20 +3,41 @@ body{
     background-size: cover;
     background-attachment: fixed;
     height: 100%;
+    color: blanchedalmond;
 }
-.col-5{
-    background-color: lightgreen;
-    opacity: 2;
+h1{
+    text-shadow: 3px 3px 6px lightgreen;
 }
+
+
 .col-8{
-    background-color: lightcoral;
+    
 }
-.score{
-    background: green;
+
+#totalScore{
+    background: lightcoral;
+}
+#numberDisplayed{
+    background: lightcoral;
 }
 .tscore{
-    background: lightblue;
+font-size: 16px;
 }
 h4{
     font-size: 20px;
+}
+h2{
+    font-size: 30px;
+}
+
+.img-thumbnail{
+    transition: 0.3s;
+}
+
+.img-thumbnail:hover {
+    background-color: #25a9b6;
+}
+
+audio{
+    display: none;
 }
